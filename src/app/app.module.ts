@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+// NgModel Tmp
+import { FormsModule } from '@angular/forms';
+
 // Routes
 import { APP_ROUTES } from './app-routing.module';
 
@@ -16,12 +19,13 @@ import { AppComponent } from './app.component';
   declarations: [
     LoginComponent,
     RegisterComponent,
-    AppComponent, // RouterOutlet Principal
+    AppComponent // RouterOutlet Principal
   ],
   imports: [
     BrowserModule,
     APP_ROUTES, // Rutas
-    PagesModule // Encapsulamiento de DashBoard, Graficas, Progress y sub-routes
+    PagesModule, // Encapsulamiento de DashBoard, Graficas, Progress y sub-routes
+    FormsModule // ngModule
   ],
   providers: [],
   bootstrap: [AppComponent]
