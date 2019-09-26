@@ -15,8 +15,12 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { Graficas1Component } from './graficas1/graficas1.component';
 import { ProgressComponent } from './progress/progress.component';
 
-// Componente personalizado
+// Componente personalizado (Progress / Graficas1)
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
+import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.component';
+
+// Chats de Graficas1
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
 declarations: [
@@ -24,12 +28,16 @@ declarations: [
         DashboardComponent,
         Graficas1Component,
         ProgressComponent,
-        IncrementadorComponent
+
+        // Componente Personalizado
+        IncrementadorComponent,
+        GraficoDonaComponent
     ],
     imports: [
         PAGES_ROUTES,  // Sub Rutas
         SharedModule, // Importo los Menus y Sidebars
-        FormsModule // Permite utilizar [(ngModule)]
+        FormsModule, // Permite utilizar [(ngModule)]
+        ChartsModule
     ],
     exports: [
         // No hacen falta.-

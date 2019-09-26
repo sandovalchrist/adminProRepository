@@ -14,7 +14,7 @@ export class IncrementadorComponent implements OnInit {
   @Output() cambioValor: EventEmitter<number> = new EventEmitter();
 
   // Es el Id (#idElemento) de un elemento HTML
-  @ViewChild('txtProgress') txtProgress: ElementRef;
+  @ViewChild('txtProgress', { static: false}) txtProgress: ElementRef;
 
   constructor() {
     // Se vera el valor por defecto
