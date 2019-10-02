@@ -14,6 +14,7 @@ import { PagesComponent } from './pages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { Graficas1Component } from './graficas1/graficas1.component';
 import { ProgressComponent } from './progress/progress.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 // Componente personalizado (Progress / Graficas1)
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
@@ -28,6 +29,7 @@ declarations: [
         DashboardComponent,
         Graficas1Component,
         ProgressComponent,
+        AccountSettingsComponent,
 
         // Componente Personalizado
         IncrementadorComponent,
@@ -47,7 +49,7 @@ declarations: [
         ProgressComponent
         */
     ],
-    providers: [],
+    providers: [ ],
     bootstrap: []
 })
 export class PagesModule { }

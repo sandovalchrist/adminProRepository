@@ -9,11 +9,13 @@ import { APP_ROUTES } from './app-routing.module';
 
 // Modules
 import { PagesModule } from './pages/pages.module';
+import { ServiceModule } from './services/service.module';
 
 // Components
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
 import { AppComponent } from './app.component';
+
 
 @NgModule({
   declarations: [
@@ -25,9 +27,10 @@ import { AppComponent } from './app.component';
     BrowserModule,
     APP_ROUTES, // Rutas
     PagesModule, // Encapsulamiento de DashBoard, Graficas, Progress y sub-routes
-    FormsModule // ngModule
+    FormsModule, // ngModule
+    ServiceModule // Servicios
   ],
-  providers: [],
+  providers: [ ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
