@@ -34,7 +34,6 @@ export class BreadcrumbsComponent implements OnInit {
         content: this.titulo
       };
 
-
       this.meta.updateTag(metaTags);
     });
   }
