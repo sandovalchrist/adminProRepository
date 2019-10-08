@@ -22,6 +22,8 @@ import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.co
 
 // Chats de Graficas1
 import { ChartsModule } from 'ng2-charts';
+import { PromesasComponent } from './promesas/promesas.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 @NgModule({
 declarations: [
@@ -33,7 +35,9 @@ declarations: [
 
         // Componente Personalizado
         IncrementadorComponent,
-        GraficoDonaComponent
+        GraficoDonaComponent,
+        PromesasComponent,
+        RxjsComponent
     ],
     imports: [
         PAGES_ROUTES,  // Sub Rutas
